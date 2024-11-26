@@ -1,0 +1,1117 @@
+fileFormatVersion: 2
+guid: 5e4522769e3c7f446ac1de970cfabe26
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Male Sword_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d8ce1f2c8dc8b488e6c3a683fdb4eb
+      internalID: 1920069937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a85a82e49cf2c848ad1e17ad05d27ba
+      internalID: -1785692956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cef408d502d6d14c9a4d5d488c39b5c
+      internalID: 1317826673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbcfdfb99ab1c3408ce42a55faad445
+      internalID: -1280187780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01489dd9d93940b498078373f96aabbb
+      internalID: 1182231551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f7f0553b2ac5e145a69f34bdf93057b
+      internalID: -433958360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_6
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af0ed860118cbf4e890015208ddeeb1
+      internalID: -1984299470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_7
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d61d523520e8b439cf59edd45603cf
+      internalID: 659126008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_8
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ec59f87ed53fe4d99b80787caf1c38
+      internalID: 1693153455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98bdad7175bd7c44d9cbbc94acd684d7
+      internalID: 1668960689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_10
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd29db18198d01042bf29071423e7fc0
+      internalID: -935483376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_11
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e7f4ed1981ea14d9055c3572308a14
+      internalID: -130657698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_12
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adff4c9f11032654db6660574475e89d
+      internalID: -1724561386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 384d28a2ca0d29f4ab8ac8512144c9f8
+      internalID: -1751209949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_14
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5532b574e6040ae4380f624885687232
+      internalID: 1800316072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_15
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22cec8917f86f649b0a9228a90b9780
+      internalID: 1906513418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_16
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301113e1a57cb6541b5a729cdba08df7
+      internalID: 2072974453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_17
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5587623e1f931945bf614144a62a2c2
+      internalID: 2059947144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_18
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e281200f0a03347b88e01b83533ade
+      internalID: -1524136098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_19
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492d98eb093075441ba192fa6ade8b1b
+      internalID: 213428247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_20
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0e6cea170865941b5992de1069bb11
+      internalID: -1178622837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c8e367da31b1d48ae892109f149676
+      internalID: -1580262489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_22
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 905cbf4d6b485244dad54d534992459b
+      internalID: 1424998230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_23
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd948c5d65965bd449670c4c41d4a5ff
+      internalID: -1956231558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_24
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc018f0376fb5c47a5b8589256e6bfc
+      internalID: -1013944696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 026b9bd87b477a149b3fd75c35462191
+      internalID: 710589625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_26
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d770c32ba3bd809498159a8f9dd7fb6e
+      internalID: 1313833967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_27
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed9ec5029343e3459a05998ee9895d0
+      internalID: -1540788288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_28
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a594b3fd195364c91bbdda41697576
+      internalID: -1720215138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba1f37be06eddd46822a55ff7e25dd3
+      internalID: 320497799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_30
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f5b459ffb12d642b4ccfc88bc66da6
+      internalID: -1167590725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_31
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea84204a65b1b74696e19b434110e0e
+      internalID: -1984688825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_32
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ccfbe166f1a4942af74ed67074e00a
+      internalID: 1688578498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_33
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74374982b1bea5b43a74eda3d2cd080a
+      internalID: -1751874070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_34
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1315c4b812423ab43824cbe816b8621a
+      internalID: 1192652034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97ab61bf23f6fc846bfe846064cde4e9
+      internalID: 882114111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_36
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b0815f0f8dc264da42494b1da68563
+      internalID: -316594131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823846cb3c3098c4c91c9a27aed9ea3d
+      internalID: 48498781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_38
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2ee7ed281ffd645a87e8f9ea315797
+      internalID: -1140939664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_39
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eaf5e1b9ca198240a12e30f8fcc418c
+      internalID: 2069091622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_40
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7280b25bb782cd4381eea4dd94f99f1
+      internalID: 2098111349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_41
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a552a03e9a1503643a304c6f9b106daa
+      internalID: -1631592043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_42
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 819cd50831a3c384184efca542e5e5cd
+      internalID: -1285911694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_43
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f69db7c7c253d46846a46a39bb549e
+      internalID: -1714189662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Male Sword_44
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0b177dc9f11f74a8d5b92df4c44d86
+      internalID: 720074778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Male Sword_0: 1920069937
+      Male Sword_1: -1785692956
+      Male Sword_10: -935483376
+      Male Sword_11: -130657698
+      Male Sword_12: -1724561386
+      Male Sword_13: -1751209949
+      Male Sword_14: 1800316072
+      Male Sword_15: 1906513418
+      Male Sword_16: 2072974453
+      Male Sword_17: 2059947144
+      Male Sword_18: -1524136098
+      Male Sword_19: 213428247
+      Male Sword_2: 1317826673
+      Male Sword_20: -1178622837
+      Male Sword_21: -1580262489
+      Male Sword_22: 1424998230
+      Male Sword_23: -1956231558
+      Male Sword_24: -1013944696
+      Male Sword_25: 710589625
+      Male Sword_26: 1313833967
+      Male Sword_27: -1540788288
+      Male Sword_28: -1720215138
+      Male Sword_29: 320497799
+      Male Sword_3: -1280187780
+      Male Sword_30: -1167590725
+      Male Sword_31: -1984688825
+      Male Sword_32: 1688578498
+      Male Sword_33: -1751874070
+      Male Sword_34: 1192652034
+      Male Sword_35: 882114111
+      Male Sword_36: -316594131
+      Male Sword_37: 48498781
+      Male Sword_38: -1140939664
+      Male Sword_39: 2069091622
+      Male Sword_4: 1182231551
+      Male Sword_40: 2098111349
+      Male Sword_41: -1631592043
+      Male Sword_42: -1285911694
+      Male Sword_43: -1714189662
+      Male Sword_44: 720074778
+      Male Sword_5: -433958360
+      Male Sword_6: -1984299470
+      Male Sword_7: 659126008
+      Male Sword_8: 1693153455
+      Male Sword_9: 1668960689
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

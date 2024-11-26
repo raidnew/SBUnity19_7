@@ -1,0 +1,1117 @@
+fileFormatVersion: 2
+guid: 90a0a56e39a9e7a4e87dd5b1acfdfbe6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Skirt_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7b1ec66ba791f42b68d7d3047a3850
+      internalID: -1698294217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5519d555bce601248820f828d73194cc
+      internalID: 600272239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e102c87d822346408ac4bfdb8f68c23
+      internalID: 57332228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34649e75286c94e43a63ae9dc43d2a1f
+      internalID: -769288362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fbf8a316dfafb146984a98ecea9a198
+      internalID: -1474729951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9bc1fb37b9b08c4fad8f18536444fee
+      internalID: 601110473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_6
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af80e3f4a7fea884eab22a46590a33f3
+      internalID: 828914779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_7
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf154f7c3b2533439835d10e4a8fb0c
+      internalID: 139309745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_8
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77cfc524592262249a501aabad48ec78
+      internalID: 1086982457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5774b69f7f8234981757deac794216
+      internalID: -387331003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_10
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0cc26c36aa8ae344aeeb478bc5819c1
+      internalID: -1220534993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_11
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee819d8861bb8a4b9c9d3eb466d83d1
+      internalID: 160102578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_12
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3361c79f7b902b43b11de672b371ace
+      internalID: 635291276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04bced1d657808644b5d23a9dfed8dd5
+      internalID: -269644961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_14
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8b9e72b6a3d8d41bdab0217713030a
+      internalID: -2052569849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_15
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c15d426e8a391947a261c71822e8832
+      internalID: -169997982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_16
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78348c9d852cb804984c83391bcad7b6
+      internalID: -625590809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_17
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bdfb639d06fa0b46b262f708a5fcfc4
+      internalID: 400750867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_18
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b40baa2c9b42a04fa713f0ae4b1590c
+      internalID: 1238485780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_19
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39df17d9310266f48917dab9e123ab7c
+      internalID: -1330991998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_20
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32f14df3683b4f48b40d1a7359053b0
+      internalID: -962764393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e54f08c7953d84cb702d43c300f24c
+      internalID: -1627086363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_22
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcca4d140b40f9545a3ccfef0a5cb4ff
+      internalID: 141143038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_23
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e4c52b26d7ecc49962305168e1ba72
+      internalID: 1921883332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_24
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be2e21485b90f848804dcbc426f04cf
+      internalID: -888976180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fbcbc1a4a5883b48b80033cd678efaf
+      internalID: 1260604380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_26
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3cdef102a9d8142bc288487fdadced
+      internalID: -1037451686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_27
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e43065c96173546821b0a62984acb6
+      internalID: -1043775170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_28
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80af09bc2676f74a973d8e7a447761e
+      internalID: 280787157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9709b8ee896f70499efa74fd8d04a76
+      internalID: 596502960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_30
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad553ea1e332d946a0986676bdfaa0b
+      internalID: 1493719582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_31
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250add89f0e087f459ed7cf265e9231b
+      internalID: -655999950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_32
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de887f26e0778540bdcc6f175ad9406
+      internalID: -1972388580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_33
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36916de232548347b3b6e2cf60702bc
+      internalID: 1068570583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_34
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4041304116df6c34aa0fd6ca89711153
+      internalID: -574672089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19949dc28de57f1448d2a5d5d15a9e86
+      internalID: 83660572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_36
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a5abdcfa78307447a48b3dd0b88c682
+      internalID: -500075480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1e9216fe49428489313c08c28ba4c9
+      internalID: -1655160461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_38
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85024dda2d6c5594eb01c63872fe45e3
+      internalID: -894321845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_39
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12f27c79a1d7ca4bb978350a397c0bf
+      internalID: -860191602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_40
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573b9d395c2ca3e45a40019b16b5d888
+      internalID: 617522796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_41
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166eca74083ba5c42887976812ea12be
+      internalID: -357530322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_42
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70a221d89b344e418b7be617b909526
+      internalID: -1140939280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_43
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc1f517cc52ef041bd14349d3596f41
+      internalID: 1560959399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skirt_44
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3253a2af4d37f39449c7a0999ab45538
+      internalID: 206680878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Skirt_0: -1698294217
+      Skirt_1: 600272239
+      Skirt_10: -1220534993
+      Skirt_11: 160102578
+      Skirt_12: 635291276
+      Skirt_13: -269644961
+      Skirt_14: -2052569849
+      Skirt_15: -169997982
+      Skirt_16: -625590809
+      Skirt_17: 400750867
+      Skirt_18: 1238485780
+      Skirt_19: -1330991998
+      Skirt_2: 57332228
+      Skirt_20: -962764393
+      Skirt_21: -1627086363
+      Skirt_22: 141143038
+      Skirt_23: 1921883332
+      Skirt_24: -888976180
+      Skirt_25: 1260604380
+      Skirt_26: -1037451686
+      Skirt_27: -1043775170
+      Skirt_28: 280787157
+      Skirt_29: 596502960
+      Skirt_3: -769288362
+      Skirt_30: 1493719582
+      Skirt_31: -655999950
+      Skirt_32: -1972388580
+      Skirt_33: 1068570583
+      Skirt_34: -574672089
+      Skirt_35: 83660572
+      Skirt_36: -500075480
+      Skirt_37: -1655160461
+      Skirt_38: -894321845
+      Skirt_39: -860191602
+      Skirt_4: -1474729951
+      Skirt_40: 617522796
+      Skirt_41: -357530322
+      Skirt_42: -1140939280
+      Skirt_43: 1560959399
+      Skirt_44: 206680878
+      Skirt_5: 601110473
+      Skirt_6: 828914779
+      Skirt_7: 139309745
+      Skirt_8: 1086982457
+      Skirt_9: -387331003
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

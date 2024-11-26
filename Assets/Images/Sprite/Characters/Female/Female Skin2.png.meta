@@ -1,0 +1,1117 @@
+fileFormatVersion: 2
+guid: ca82a4625f12fae4799865d28c41818b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Female Skin2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1bde5c96db49c47bd07e5ea7824a0e
+      internalID: -161883386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbfad3b95af43a8489c77defaea157d6
+      internalID: 729408494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa57d731380ff741a7da3a727fd4d80
+      internalID: 1794754036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3584affb492a10041b6c9f266e584c75
+      internalID: 1423697560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c5c0f5131290049ba774119ca2060a
+      internalID: 1105333342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6baf564ba35c10643a0f2c5863d87c8c
+      internalID: 77558813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_6
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8999d4e7b21d4694cb08dfecfe7fa067
+      internalID: -201624672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_7
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c20cea7868e7c43810d8e4d5be11ff
+      internalID: 1450290163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_8
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e28472cc3c47f4696332eb57bbfed0
+      internalID: 857613000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0097ad7219fba47b5197e06fa8800e
+      internalID: -55606788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_10
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39be46082ed30fa419ab670cf9824260
+      internalID: -416215649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_11
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d162ca412feca42bf7744a0aeb7c7c
+      internalID: -1522714185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_12
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3c5ad48f30f45419985f4475d3304d
+      internalID: 1227808788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90dd10db663143149aaa79def1865269
+      internalID: -888668199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_14
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e47c218d93e8a5c40b60438920f22832
+      internalID: -671904107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_15
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5d63dbac4a3764993501b58784b9f7
+      internalID: 782721389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_16
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26aca7c90052224e9b461239024d99c
+      internalID: -1918627121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_17
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f422b6684d1028748b8adeb8825fa08a
+      internalID: -1795987809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_18
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b84338041153a6c4798216aee0455418
+      internalID: 1007424467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_19
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7410dafdbcafa449a18bb00599b4475
+      internalID: 499643394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_20
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2b5b46b790964409b9533f5058974b
+      internalID: -1485257366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa7ed6254105224491658b67fa49330
+      internalID: -1506530657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_22
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c171347ad3daea1439fa04494fcd9a95
+      internalID: 322097218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_23
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aadf89da1b0108499af2b96b3e79944
+      internalID: -1451617775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_24
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e6ca9376b3fcc409f223f38736c416
+      internalID: 1856264265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1361556bad05354ebbb99dfcfb8d50d
+      internalID: 573123959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_26
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d2eb0bed4934548be3526352c719fd
+      internalID: 908791088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_27
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b7f601dd259cd4aaf366c8b0bfeee5
+      internalID: -155799050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_28
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3873bef69c1e348b986b9451bcbed1
+      internalID: 1411040572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c6ca900d3a82e7468ee68b905177275
+      internalID: -1783870725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_30
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bad4897ca3ed6c45b09998b975f99c4
+      internalID: 622995300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_31
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fe162b4ad8ac549a63890935a3806f
+      internalID: -2039590610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_32
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b639eea9421e44b9f46fca9fdf9a49
+      internalID: -1715616470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_33
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230dee5f5f5d74c4789f24ca3b12a66c
+      internalID: 170861911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_34
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8ea6fbf6e327544a9ce0d24f488022
+      internalID: 465179134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f0d76b5162bca42a555a5d48efea46
+      internalID: 979920875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_36
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01814757178abf43b56e09bb862b1b2
+      internalID: 1721964935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdcec6baa9a7da44b9133bfc8441dcc6
+      internalID: 1342739674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_38
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc8cd67eab46d343afa1916955e5e1b
+      internalID: -839070463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_39
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ead4e98dd30804b907ac55a356d945
+      internalID: 1921553558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_40
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67a5147bed644346bb369b64b4f4cfd
+      internalID: 92568531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_41
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ecc009d59238947a8d643c31632a6c
+      internalID: -1718757828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_42
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700509e0e576e3e49aad703967f1d3b4
+      internalID: -1896915010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_43
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dee297dc4f653d448aa8637fed16ade
+      internalID: 632244010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Female Skin2_44
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.65, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ffca01b9de0de49a495370145cdcfe
+      internalID: -836979466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Female Skin2_0: -161883386
+      Female Skin2_1: 729408494
+      Female Skin2_10: -416215649
+      Female Skin2_11: -1522714185
+      Female Skin2_12: 1227808788
+      Female Skin2_13: -888668199
+      Female Skin2_14: -671904107
+      Female Skin2_15: 782721389
+      Female Skin2_16: -1918627121
+      Female Skin2_17: -1795987809
+      Female Skin2_18: 1007424467
+      Female Skin2_19: 499643394
+      Female Skin2_2: 1794754036
+      Female Skin2_20: -1485257366
+      Female Skin2_21: -1506530657
+      Female Skin2_22: 322097218
+      Female Skin2_23: -1451617775
+      Female Skin2_24: 1856264265
+      Female Skin2_25: 573123959
+      Female Skin2_26: 908791088
+      Female Skin2_27: -155799050
+      Female Skin2_28: 1411040572
+      Female Skin2_29: -1783870725
+      Female Skin2_3: 1423697560
+      Female Skin2_30: 622995300
+      Female Skin2_31: -2039590610
+      Female Skin2_32: -1715616470
+      Female Skin2_33: 170861911
+      Female Skin2_34: 465179134
+      Female Skin2_35: 979920875
+      Female Skin2_36: 1721964935
+      Female Skin2_37: 1342739674
+      Female Skin2_38: -839070463
+      Female Skin2_39: 1921553558
+      Female Skin2_4: 1105333342
+      Female Skin2_40: 92568531
+      Female Skin2_41: -1718757828
+      Female Skin2_42: -1896915010
+      Female Skin2_43: 632244010
+      Female Skin2_44: -836979466
+      Female Skin2_5: 77558813
+      Female Skin2_6: -201624672
+      Female Skin2_7: 1450290163
+      Female Skin2_8: 857613000
+      Female Skin2_9: -55606788
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

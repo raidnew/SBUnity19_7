@@ -45421,6 +45421,7 @@ MonoBehaviour:
   _weapon: {fileID: 26669502}
   _boots: {fileID: 600623677}
   _jumpPower: 10
+  _airHorizontalSpeed: 4
   _walkSpeed: 1
   _runSpeed: 2
   _pushPower: 1

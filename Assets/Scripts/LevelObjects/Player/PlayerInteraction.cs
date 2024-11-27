@@ -15,6 +15,7 @@ public class PlayerInteraction : MonoBehaviour, IInputListener
     [SerializeField] private GameObject _boots;
     [Header("Movement settings")]
     [SerializeField] private float _jumpPower;
+    [SerializeField] private float _airHorizontalSpeed;
     [SerializeField] private float _walkSpeed;
     [SerializeField] private float _runSpeed;
     [SerializeField] private float _pushPower;
@@ -25,7 +26,6 @@ public class PlayerInteraction : MonoBehaviour, IInputListener
     private Rigidbody2D _playerRigitBody2D;
     private Animator _playerAnimator;
     private Health _health;
-    private float _currentSpeed;
 
     private IGround _currentGround;
 
@@ -91,8 +91,11 @@ public class PlayerInteraction : MonoBehaviour, IInputListener
 
     public void Move(float value)
     {
-        _currentSpeed = value * (IsRun ? _runSpeed : _walkSpeed);
-        SetHSpeed(value * (IsRun ? _runSpeed : _walkSpeed));
+        float currentHorizontalSpeed = 0;
+        if (!IsOnGround) currentHorizontalSpeed = _airHorizontalSpeed;
+        else currentHorizontalSpeed = (IsRun ? _runSpeed : _walkSpeed);
+        currentHorizontalSpeed *= value;
+        SetHSpeed(currentHorizontalSpeed);
     }
 
     public void Run(bool isRun)
@@ -159,16 +162,16 @@ public class PlayerInteraction : MonoBehaviour, IInputListener
 
     private void SetupAnimationSpeed()
     {
-        Vector2 speed = _playerRigitBody2D.velocity;
-        if (IsOnGround) speed -= CurrentGround.Speed;
+        Vector2 relativeSpeed = _playerRigitBody2D.velocity;
+        if (IsOnGround) relativeSpeed -= CurrentGround.Speed;
 
-        if (speed.x < -0.5)
+        if (relativeSpeed.x < -0.5)
             Flip(false);
-        else if (speed.x > 0.5)
+        else if (relativeSpeed.x > 0.5)
             Flip(true);
 
-        _playerAnimator.SetInteger("VSpeed", (int)(speed.y * 10));
-        _playerAnimator.SetInteger("HSpeed", (int)(speed.x * 10));
+        _playerAnimator.SetInteger("VSpeed", (int)(relativeSpeed.y * 10));
+        _playerAnimator.SetInteger("HSpeed", (int)(relativeSpeed.x * 10));
     }
 
     private void OnDamage()
@@ -194,7 +197,7 @@ public class PlayerInteraction : MonoBehaviour, IInputListener
 
     private void Flip(bool isFlip)
     {
-        transform.localScale = new Vector3(isFlip ? 1 : -1, 1, 1);
+        transform.localScale = new Vector3((isFlip ? 1 : -1), 1, 1);
     }
 
     private void SetHSpeed(float speed)

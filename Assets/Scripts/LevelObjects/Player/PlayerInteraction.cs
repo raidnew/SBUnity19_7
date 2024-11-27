@@ -1,3 +1,4 @@
+using Cinemachine.Utility;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -24,6 +25,7 @@ public class PlayerInteraction : MonoBehaviour, IInputListener
     private Rigidbody2D _playerRigitBody2D;
     private Animator _playerAnimator;
     private Health _health;
+    private float _currentSpeed;
 
     private IGround _currentGround;
 
@@ -32,6 +34,7 @@ public class PlayerInteraction : MonoBehaviour, IInputListener
         set
         {
             _currentGround = value;
+            Debug.Log($"OnGround {_currentGround != null}");
             _playerAnimator.SetBool("IsOnGround", CurrentGround != null);
         }
     }
@@ -88,6 +91,7 @@ public class PlayerInteraction : MonoBehaviour, IInputListener
 
     public void Move(float value)
     {
+        _currentSpeed = value * (IsRun ? _runSpeed : _walkSpeed);
         SetHSpeed(value * (IsRun ? _runSpeed : _walkSpeed));
     }
 
@@ -147,6 +151,10 @@ public class PlayerInteraction : MonoBehaviour, IInputListener
         IDamager damager;
         if (collision.gameObject.TryGetComponent<IDamager>(out damager))
             _health.Damage(damager.Damage);
+
+        IDiedArea diedArea;
+        if (collision.gameObject.TryGetComponent<IDiedArea>(out diedArea))
+            _health.Damage(_health.CurrentHealth);
     }
 
     private void SetupAnimationSpeed()

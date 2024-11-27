@@ -45291,7 +45291,8 @@ MonoBehaviour:
   _walkSpeed: 1
   _runSpeed: 2
   _pushPower: 1
-  _textCantRun: "\u0411\u0435\u0436\u0430\u0442\u044C \u0431\u043E\u043B\u044C\u043D\u043E"
+  _textCantRun: "\u041F\u043E\u043F\u0440\u043E\u0431\u0443\u0439 \u0441\u0430\u043C
+    \u043F\u043E\u0431\u0435\u0433\u0430\u0442\u044C \u0431\u0435\u0437 \u043E\u0431\u0443\u0432\u0438!"
 --- !u!114 &796906412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118758,11 +118759,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1981212412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0}
 --- !u!114 &5076660388031689360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118772,11 +118773,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2788348535415685293}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d26a203052b47043adad896f0154926, type: 3}
+  m_Script: {fileID: 11500000, guid: e0c332d2b85a8a64b8b231170014a61d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _bubblePrefab: {fileID: 8948656454439916565, guid: db33ae888f055fb4cb5c7960278135bd, type: 3}
-  _backgroundMargin: 10
   _camera: {fileID: 519420031}
 --- !u!1001 &5927064184571955783
 PrefabInstance:

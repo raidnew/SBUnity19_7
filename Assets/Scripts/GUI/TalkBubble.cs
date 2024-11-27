@@ -9,32 +9,39 @@ public class TalkBubble : MonoBehaviour, ITalkBubble
     [SerializeField] private RectTransform _background;
     [SerializeField] private TextMeshProUGUI _textField;
 
-    public Action OnDestroy { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+    private int _backgroundMargin = 10;
+    private bool _needRecalcSizeBackground = true;
+    private Camera _camera;
+    private Transform _linkPoint;
+    private RectTransform _rt;
 
-    public void ShowMessage(string message, Transform position, int time)
+    public Action<ITalkBubble> OnRemoveBubble { get; set; }
+
+    public void ShowMessage(string message, Transform position, Camera camera, int time)
     {
-        
+        _rt = GetComponent<RectTransform>();
+        _linkPoint = position;
+        _camera = camera;
+        StartCoroutine(ShowMessage(message, time));
     }
+
     private void Update()
     {
         if (_needRecalcSizeBackground)
+        {
+            _needRecalcSizeBackground = false;
             _background.sizeDelta = new Vector2(_textField.textInfo.textComponent.textBounds.size.x + _backgroundMargin * 2, _textField.textInfo.textComponent.textBounds.size.y + _backgroundMargin * 2);
+        }
+
+        _rt.localPosition = _camera.WorldToScreenPoint(_linkPoint.position); 
     }
 
-    private IEnumerator ShowMessage(string message, Transform teller)
+    private IEnumerator ShowMessage(string message, int time)
     {
-        Show();
-
-        Vector3 pos = _camera.WorldToScreenPoint(teller.position);
-
-        RectTransform rt = __instance.GetComponent<RectTransform>();
-
-        rt.position = pos;
-
-
         _textField.SetText(message);
-        yield return new WaitForSeconds(3);
-        Hide();
+        yield return new WaitForSeconds(time);
+        OnRemoveBubble?.Invoke(this);
+        Destroy(gameObject);
         yield return null;
     }
 

@@ -10,6 +10,6 @@ public class Teller : MonoBehaviour, IAmUsable
 
     public void Use()
     {
-        TextBubble.Message(_message);
+        Bubble.Message(_message, transform);
     }
 }

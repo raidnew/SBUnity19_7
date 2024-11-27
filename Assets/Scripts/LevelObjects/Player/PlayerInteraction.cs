@@ -34,7 +34,6 @@ public class PlayerInteraction : MonoBehaviour, IInputListener
         set
         {
             _currentGround = value;
-            Debug.Log($"OnGround {_currentGround != null}");
             _playerAnimator.SetBool("IsOnGround", CurrentGround != null);
         }
     }
@@ -103,7 +102,7 @@ public class PlayerInteraction : MonoBehaviour, IInputListener
         if (!_boots.activeSelf)
         {
             isRun = false;
-            TextBubble.Message(_textCantRun);
+            Bubble.Message(_textCantRun, transform);
         }
         IsRun = isRun;
     }

@@ -43,7 +43,7 @@ public class TalkBubble : MonoBehaviour, ITalkBubble
         {
             _needRecalcSizeBackground = false;
             _background.sizeDelta = new Vector2(sizeTextField.x + _backgroundMargin * 2, sizeTextField.y + _backgroundMargin * 2);
-            _tile.localPosition = new Vector3(-3, 160 - (sizeTextField.y + _backgroundMargin * 2) / 2, 0);
+            _tile.localPosition = new Vector3(-3, 78 - (sizeTextField.y + _backgroundMargin * 2) / 2, 0);
         }
     }
 

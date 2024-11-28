@@ -20,6 +20,8 @@ public class PlayerInteraction : MonoBehaviour, IInputListener
     [SerializeField] private float _runSpeed;
     [SerializeField] private float _pushPower;
     [SerializeField] private string _textCantRun;
+    [SerializeField] private Transform _bubbleLink;
+
 
     private bool _isRun = false;
     private bool _isAttack = false;
@@ -102,7 +104,7 @@ public class PlayerInteraction : MonoBehaviour, IInputListener
         if (!_boots.activeSelf)
         {
             isRun = false;
-            Bubble.Message(_textCantRun, transform);
+            Bubble.Message(_textCantRun, _bubbleLink);
         }
         IsRun = isRun;
     }

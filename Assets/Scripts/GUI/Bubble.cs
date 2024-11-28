@@ -1,8 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
 
 public class Bubble : MonoBehaviour
 {
@@ -10,7 +7,6 @@ public class Bubble : MonoBehaviour
     [SerializeField] private Camera _camera;
 
     private static Bubble __instance;
-
     private List<ITalkBubble> _showedBubbls;
 
     private void Awake()
@@ -26,10 +22,27 @@ public class Bubble : MonoBehaviour
 
     private void ShowBubble(string message, Transform teller)
     {
-        ITalkBubble newBubble = Instantiate(_bubblePrefab, transform);
-        newBubble.ShowMessage(message, teller, _camera, 3);
-        newBubble.OnRemoveBubble += OnDestroyBubble;
-        _showedBubbls.Add(newBubble);
+        int controlsumm = GetControlSumm(message, teller.GetInstanceID());
+        if (!CheckAlreadyBubble(controlsumm))
+        {
+            ITalkBubble newBubble = Instantiate(_bubblePrefab, transform);
+            newBubble.CheckSumm = controlsumm;
+            newBubble.ShowMessage(message, teller, _camera, 3);
+            newBubble.OnRemoveBubble += OnDestroyBubble;
+            _showedBubbls.Add(newBubble);
+        }
+    }
+
+    private int GetControlSumm(string text, int tellerId)
+    {
+        return tellerId * 1000 + text.Length;
+    }
+
+    private bool CheckAlreadyBubble(int checkSumm)
+    {
+        foreach (ITalkBubble bubble in _showedBubbls) 
+            if(bubble.CheckSumm == checkSumm) return true;
+        return false;
     }
 
     private void OnDestroyBubble(ITalkBubble Bubble)

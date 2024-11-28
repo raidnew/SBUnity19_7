@@ -4,13 +4,15 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
-public class Sceleton : BrokenObject
+public class Sceleton : BaseEnemy
 {
     [SerializeField] private EnemySword _sword;
     [SerializeField] private float _attackDelay;
+    [SerializeField] private Collider2D _visionArea;
 
     private Animator _animator;
     private Rigidbody2D _rb;
+    private ISight _sight;
 
     private bool _isAttack;
     private double _lastAttackTime;
@@ -29,6 +31,7 @@ public class Sceleton : BrokenObject
     {
         _rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
+        //_sight.VisionArea = _visionArea;
         base.InitHealth();
     }
 

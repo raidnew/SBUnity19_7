@@ -2,15 +2,18 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TalkBubble : MonoBehaviour, ITalkBubble
 {
     [SerializeField] private RectTransform _background;
+    [SerializeField] private RectTransform _tile;
     [SerializeField] private TextMeshProUGUI _textField;
 
     private int _backgroundMargin = 10;
     private bool _needRecalcSizeBackground = true;
+    private int _checkSumm;
     private Camera _camera;
     private Transform _linkPoint;
     private RectTransform _rt;
@@ -25,15 +28,28 @@ public class TalkBubble : MonoBehaviour, ITalkBubble
         StartCoroutine(ShowMessage(message, time));
     }
 
+    public int CheckSumm { get; set; }
+
     private void Update()
     {
-        if (_needRecalcSizeBackground)
+        if (_needRecalcSizeBackground) ResizeBackground();
+        PositioningBubble();
+    }
+
+    private void ResizeBackground()
+    {
+        Vector3 sizeTextField = _textField.textInfo.textComponent.textBounds.size;
+        if (sizeTextField.x > 0)
         {
             _needRecalcSizeBackground = false;
-            _background.sizeDelta = new Vector2(_textField.textInfo.textComponent.textBounds.size.x + _backgroundMargin * 2, _textField.textInfo.textComponent.textBounds.size.y + _backgroundMargin * 2);
+            _background.sizeDelta = new Vector2(sizeTextField.x + _backgroundMargin * 2, sizeTextField.y + _backgroundMargin * 2);
+            _tile.localPosition = new Vector3(-3, 160 - (sizeTextField.y + _backgroundMargin * 2) / 2, 0);
         }
+    }
 
-        _rt.localPosition = _camera.WorldToScreenPoint(_linkPoint.position); 
+    private void PositioningBubble()
+    {
+        _rt.localPosition = _camera.WorldToScreenPoint(_linkPoint.position);
     }
 
     private IEnumerator ShowMessage(string message, int time)

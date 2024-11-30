@@ -7,7 +7,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(Health))]
-public class PlayerInteraction : MonoBehaviour, IInputListener
+public class PlayerInteraction : MonoBehaviour, IInputListener, IPlayer
 {
     public Action OnDied;
 
@@ -155,7 +155,6 @@ public class PlayerInteraction : MonoBehaviour, IInputListener
         IDamager damager;
         if (collision.gameObject.TryGetComponent<IDamager>(out damager))
             _health.Damage(damager.Damage);
-
         IDiedArea diedArea;
         if (collision.gameObject.TryGetComponent<IDiedArea>(out diedArea))
             _health.Damage(_health.CurrentHealth);

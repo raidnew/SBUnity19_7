@@ -4,16 +4,16 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
-public class Sceleton : BaseEnemy
+public class Sceleton : Enemy
 {
     [SerializeField] private EnemySword _sword;
-    [SerializeField] private float _attackDelay;
-    [SerializeField] private Collider2D _visionArea;
+    [SerializeField] private float _timeBeetweenAttack;
+    [SerializeField] private int _baseSpeed;
+    [SerializeField] private Vector3 _leftLimitMove;
+    [SerializeField] private Vector3 _rightLimitMove;
 
     private Animator _animator;
     private Rigidbody2D _rb;
-    private ISight _sight;
-
     private bool _isAttack;
     private double _lastAttackTime;
 
@@ -31,25 +31,49 @@ public class Sceleton : BaseEnemy
     {
         _rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
-        //_sight.VisionArea = _visionArea;
         base.InitHealth();
     }
 
-    void FixedUpdate()
+    public override bool CanAttack()
     {
-        if (IsNeedAttack())
-            Attack();
+        return !IsAttack && _health.CurrentPercent > 0 && Time.time > _lastAttackTime + _timeBeetweenAttack && !IsDied();
     }
 
-    private bool IsNeedAttack()
+    public override bool CanMove()
     {
-        if(_health == null) return false;
-        return !IsAttack && _health.CurrentPercent > 0 && Time.time > _lastAttackTime + _attackDelay;
+        return !IsDied();
     }
 
-    private void Attack()
+    public override bool IsDied()
+    {
+        return _health.CurrentPercent == 0;
+    }
+
+    public override void Move(float direction)
+    {
+        SetHSpeed((int)(direction * _baseSpeed));
+    }
+
+    public override void Wait()
+    {
+        SetHSpeed(0);
+    }
+
+    public override void Attack()
     {
         IsAttack = true;
+    }
+
+    protected override void Die()
+    {
+        _animator.SetBool("IsALive", false);
+    }
+
+    private void SetHSpeed(float speed)
+    {
+        if (speed != 0) Flip(speed < 0);
+        _rb.velocity = new Vector2(speed, 0);
+        _animator.SetInteger("HSpeed", (int)speed);
     }
 
     private void Hit()
@@ -62,11 +86,6 @@ public class Sceleton : BaseEnemy
         _sword.StopHit();
         IsAttack = false;
         _lastAttackTime = Time.time;
-    }
-
-    protected override void Die()
-    {
-        _animator.SetBool("IsALive", false);
     }
 
 }

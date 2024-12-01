@@ -14,6 +14,7 @@ public class PlayerInteraction : MonoBehaviour, IInputListener, IPlayer
 
     [SerializeField] private Sword _weapon;
     [SerializeField] private GameObject _boots;
+    [SerializeField] private GameObject _sword;
     [SerializeField] private Bullet _bulletPrefab;
     [SerializeField] private Transform _shootPoint;
     [Header("Movement settings")]
@@ -100,7 +101,7 @@ public class PlayerInteraction : MonoBehaviour, IInputListener, IPlayer
 
     private bool IsAllowAttack
     {
-        get { return _health.CurrentPercent > 0 && !_isAttack && IsOnGround; }
+        get { return _health.CurrentPercent > 0 && !_isAttack && IsOnGround && _sword.activeSelf; }
     }
 
     public void Move(float value)

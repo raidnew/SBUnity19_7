@@ -28523,7 +28523,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 109.81973, y: 0.04816997, z: -10}
+  m_LocalPosition: {x: -3.5876498, y: 0.27401996, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45457,7 +45457,7 @@ Transform:
   m_GameObject: {fileID: 796906404}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 109.81, y: -1.37, z: 0.0000000018626451}
+  m_LocalPosition: {x: -3.599, y: -1.385, z: 0.0000000018626451}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -45546,6 +45546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _weapon: {fileID: 26669502}
   _boots: {fileID: 600623677}
+  _sword: {fileID: 26669498}
   _bulletPrefab: {fileID: 6975564166261559388, guid: e4ff8cfa34987754cb23ffbfacfc2944, type: 3}
   _shootPoint: {fileID: 1561865688}
   _jumpPower: 10
@@ -47212,7 +47213,7 @@ Transform:
   m_GameObject: {fileID: 821741347}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 109.81, y: -1.37, z: -10}
+  m_LocalPosition: {x: -3.599, y: -1.385, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

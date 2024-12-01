@@ -5,11 +5,12 @@ using UnityEngine;
 public class DestroyAfterExplose : MonoBehaviour
 {
     private bool _wasExplosive;
-    private void OnCollisionEnter2D(Collision2D collision)
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Bomb bomb;
+        IExplosion explosion;
         PointEffector2D pointEffector;
-        if(collision.gameObject.TryGetComponent<PointEffector2D>(out pointEffector) && collision.gameObject.TryGetComponent<Bomb>(out bomb))
+        if (collision.gameObject.TryGetComponent<PointEffector2D>(out pointEffector) && collision.gameObject.TryGetComponent<IExplosion>(out explosion))
         {
             StartCoroutine(WasBang());
         }

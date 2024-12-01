@@ -10,9 +10,12 @@ using UnityEngine;
 public class PlayerInteraction : MonoBehaviour, IInputListener, IPlayer
 {
     public Action OnDied;
+    public Action<Bullet> OnCreateBullet;
 
     [SerializeField] private Sword _weapon;
     [SerializeField] private GameObject _boots;
+    [SerializeField] private Bullet _bulletPrefab;
+    [SerializeField] private Transform _shootPoint;
     [Header("Movement settings")]
     [SerializeField] private float _jumpPower;
     [SerializeField] private float _airHorizontalSpeed;
@@ -25,6 +28,7 @@ public class PlayerInteraction : MonoBehaviour, IInputListener, IPlayer
 
     private bool _isRun = false;
     private bool _isAttack = false;
+    private bool _isShoot = false;
     private Rigidbody2D _playerRigitBody2D;
     private Animator _playerAnimator;
     private Health _health;
@@ -62,6 +66,15 @@ public class PlayerInteraction : MonoBehaviour, IInputListener, IPlayer
         {
             _isAttack = value;
             _playerAnimator.SetBool("IsAttack", _isAttack);
+        }
+    }
+    private bool IsShoot
+    {
+        get { return _isShoot; }
+        set
+        {
+            _isShoot = value;
+            _playerAnimator.SetBool("IsShoot", _isShoot);
         }
     }
 
@@ -123,6 +136,15 @@ public class PlayerInteraction : MonoBehaviour, IInputListener, IPlayer
         }
     }
 
+    public void Shoot()
+    {
+        if (IsAllowAttack)
+        {
+            SetHSpeed(0);
+            IsShoot = true;
+        }
+    }
+
     private void Awake()
     {
         _playerRigitBody2D = GetComponent<Rigidbody2D>();
@@ -174,6 +196,12 @@ public class PlayerInteraction : MonoBehaviour, IInputListener, IPlayer
         _playerAnimator.SetInteger("HSpeed", (int)(relativeSpeed.x * 10));
     }
 
+    private void CreateBullet()
+    {
+        Bullet bullet = Instantiate<Bullet>(_bulletPrefab, _shootPoint.position, _shootPoint.rotation);
+        OnCreateBullet(bullet);
+    }
+
     private void OnDamage()
     {
         _weapon.StartHit();
@@ -183,6 +211,12 @@ public class PlayerInteraction : MonoBehaviour, IInputListener, IPlayer
     {
         _weapon.StopHit();
         IsAttack = false;
+    }
+
+    private void OnShoot()
+    {
+        IsShoot = false;
+        CreateBullet();
     }
 
     private void Die()

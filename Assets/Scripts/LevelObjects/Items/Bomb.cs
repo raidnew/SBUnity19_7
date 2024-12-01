@@ -5,31 +5,28 @@ using UnityEngine;
 
 public class Bomb : MonoBehaviour, IAmUsable, IBomb
 {
-    [SerializeField] private float _explosePower = 100;
+    [SerializeField] private Explosion _explosion;
+    private Animator _animator;
 
-    private bool _canUse = true;
-    public bool CanUse { get => _canUse; }
+    public bool CanUse { get; private set; }
+
+    private void Awake()
+    {
+        CanUse = true;
+        TryGetComponent<Animator>(out _animator);
+    }
 
     public void Use()
     {
-        if (CanUse)
-            StartCoroutine(Explose());
+        if (!CanUse) return;
+        CanUse = false;
+        if (_animator != null)
+            _animator.SetTrigger("Explode");
+        _explosion.gameObject.SetActive(true);
     }
 
-    IEnumerator Explose()
+    public void OnEndExplode()
     {
-        _canUse = false;
-        PointEffector2D _explosion;
-        CircleCollider2D _collider;
-        _collider = gameObject.AddComponent<CircleCollider2D>();
-        _collider.usedByEffector = true;
-        _collider.radius = 10;
-
-        _explosion = gameObject.AddComponent<PointEffector2D>();
-        _explosion.forceMagnitude = _explosePower;
-        _explosion.forceVariation = 20;
-        yield return new WaitForSeconds(0.1f);
         Destroy(gameObject);
-        yield return false;
     }
 }

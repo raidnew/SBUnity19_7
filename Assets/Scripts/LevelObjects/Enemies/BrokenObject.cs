@@ -28,4 +28,13 @@ public class BrokenObject : MonoBehaviour
         if (collision.gameObject.TryGetComponent<IWeapon>(out weapon))
             _health.Damage(weapon.Damage);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        IWeapon weapon;
+        if (collision.gameObject.TryGetComponent<IWeapon>(out weapon))
+            _health.Damage(weapon.Damage);
+    }
+
+
 }

@@ -27,5 +27,8 @@ public class UserInput : MonoBehaviour
         if (Input.GetButtonDown(Constants.fire1))
             _interactiveObject.Attack();
 
+        if (Input.GetButtonDown(Constants.fire2))
+            _interactiveObject.Shoot();
+
     }
 }

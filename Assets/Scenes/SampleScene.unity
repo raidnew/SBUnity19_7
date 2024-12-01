@@ -7134,7 +7134,6 @@ GameObject:
   m_Component:
   - component: {fileID: 118327338}
   - component: {fileID: 118327339}
-  - component: {fileID: 118327342}
   - component: {fileID: 118327341}
   - component: {fileID: 118327340}
   m_Layer: 0
@@ -7269,20 +7268,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _containedItem: 2
-  _removeAfterGet: 0
---- !u!114 &118327342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 118327337}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e225029468057c40a17d7a6e386ce8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _containedItem: 1
   _removeAfterGet: 0
 --- !u!1 &118444056
 GameObject:
@@ -7956,6 +7941,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &127814607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 127814608}
+  m_Layer: 0
+  m_Name: BubbleLink
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &127814608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127814607}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.079, y: 1.17, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1689126809}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &130210432
 GameObject:
   m_ObjectHideFlags: 0
@@ -11683,6 +11699,9 @@ GameObject:
   - component: {fileID: 194323481}
   - component: {fileID: 194323482}
   - component: {fileID: 194323483}
+  - component: {fileID: 194323484}
+  - component: {fileID: 194323486}
+  - component: {fileID: 194323485}
   m_Layer: 10
   m_Name: GandalfHardcore Platformer Assets_229
   m_TagString: Untagged
@@ -11769,6 +11788,77 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 955d7b89b152cf64a80beeda4787379f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &194323484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194323480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f614149d1dbd3748a1a2b00f79794ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _message: "\u041E\u0434\u0438\u043D \u0441\u043A\u0435\u043B\u0435\u0442!"
+  _linkBubble: {fileID: 1218542115}
+--- !u!114 &194323485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194323480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d4c9e8d7be8dd41ad7ec6617a5d5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &194323486
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194323480}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.16980162}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8, y: 0.8}
+    newSize: {x: 0.8, y: 0.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 0.46039683}
+  m_EdgeRadius: 0
 --- !u!1 &196501888
 GameObject:
   m_ObjectHideFlags: 0
@@ -13353,7 +13443,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1582559493
   m_SortingLayer: 3
-  m_SortingOrder: 3
+  m_SortingOrder: 5
   m_Sprite: {fileID: 1016088703, guid: 89502dee634b84341aec7b8ec51593b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -28523,7 +28613,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.5876498, y: 0.27401996, z: -10}
+  m_LocalPosition: {x: -3.591267, y: 0.27401996, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -63796,7 +63886,7 @@ PointEffector2D:
   m_ForceSource: 0
   m_ForceTarget: 0
   m_ForceMode: 0
-  m_Drag: 2
+  m_Drag: 0
   m_AngularDrag: 2
 --- !u!114 &1112156127
 MonoBehaviour:
@@ -78509,6 +78599,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1370944484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1370944485}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1370944485
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370944484}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.05, y: 0.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1545981818}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1371821802
 GameObject:
   m_ObjectHideFlags: 0
@@ -85993,8 +86114,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f614149d1dbd3748a1a2b00f79794ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _message: "\u0422\u044B \u0447\u0435\u0433\u043E \u0442\u0443\u0442 \u0433\u043E\u043B\u044B\u0439
-    \u0431\u0435\u0433\u0430\u0435\u0448\u044C? \u042D\u0442\u043E \u041D\u0435\u043F\u0440\u0438\u043B\u0438\u0447\u043D\u043E!"
+  _message: "\u041F\u043E\u043C\u043E\u0433\u0438\u0442\u0435! \u043E\u043D\u0438
+    \u043F\u0440\u0435\u0432\u0440\u0430\u0442\u0438\u043B\u0438 \u043C\u0435\u043D\u044F
+    \u0432 \u043F\u0443\u0433\u0430\u043B\u043E!"
   _linkBubble: {fileID: 474222222}
 --- !u!114 &1525822600
 MonoBehaviour:
@@ -86063,6 +86185,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1527072942}
   - component: {fileID: 1527072943}
+  - component: {fileID: 1527072944}
+  - component: {fileID: 1527072946}
+  - component: {fileID: 1527072945}
   m_Layer: 0
   m_Name: GandalfHardcore Platformer Assets_280
   m_TagString: Untagged
@@ -86137,6 +86262,77 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1527072944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527072941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f614149d1dbd3748a1a2b00f79794ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _message: "\u041D\u0443 \u044F \u0436\u0435 \u043F\u0440\u043E\u0441\u0438\u043B\u0430!"
+  _linkBubble: {fileID: 127814608}
+--- !u!114 &1527072945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527072941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d4c9e8d7be8dd41ad7ec6617a5d5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1527072946
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527072941}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.3104965, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8, y: 1.6}
+    newSize: {x: 0.8, y: 1.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.17900693, y: 1.6}
+  m_EdgeRadius: 0
 --- !u!1 &1529083906
 GameObject:
   m_ObjectHideFlags: 0
@@ -87323,6 +87519,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1545981818}
   - component: {fileID: 1545981819}
+  - component: {fileID: 1545981822}
+  - component: {fileID: 1545981821}
+  - component: {fileID: 1545981820}
   m_Layer: 0
   m_Name: GandalfHardcore Platformer Assets_32 (5)
   m_TagString: Untagged
@@ -87342,7 +87541,8 @@ Transform:
   m_LocalPosition: {x: 41.66608, y: -1.6535437, z: -0.021917894}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1370944485}
   m_Father: {fileID: 902428009}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1545981819
@@ -87397,6 +87597,77 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1545981820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545981817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d4c9e8d7be8dd41ad7ec6617a5d5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1545981821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545981817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f614149d1dbd3748a1a2b00f79794ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _message: "Ctrl \u0438 Alt, \u043D\u0430\u0436\u043C\u0438 \u0438 \u0434\u043E\u043C\u0438\u043D\u0438\u0440\u0443\u0439!"
+  _linkBubble: {fileID: 1370944485}
+--- !u!61 &1545981822
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545981817}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8, y: 0.8}
+    newSize: {x: 0.8, y: 0.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 0.8}
+  m_EdgeRadius: 0
 --- !u!1 &1548145515
 GameObject:
   m_ObjectHideFlags: 0
@@ -93003,6 +93274,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1666283399}
   - component: {fileID: 1666283400}
+  - component: {fileID: 1666283401}
+  - component: {fileID: 1666283402}
   m_Layer: 0
   m_Name: GandalfHardcore Platformer Assets_281
   m_TagString: Untagged
@@ -93077,6 +93350,65 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1666283401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666283398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e225029468057c40a17d7a6e386ce8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _containedItem: 1
+  _removeAfterGet: 0
+--- !u!61 &1666283402
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666283398}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.34897614, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8, y: 1.6}
+    newSize: {x: 0.8, y: 1.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.20491028, y: 1.6}
+  m_EdgeRadius: 0
 --- !u!1 &1667069897
 GameObject:
   m_ObjectHideFlags: 0
@@ -94265,6 +94597,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1689126809}
+  - component: {fileID: 1689126810}
+  - component: {fileID: 1689126812}
+  - component: {fileID: 1689126811}
   m_Layer: 0
   m_Name: Witches1
   m_TagString: Untagged
@@ -94281,7 +94616,7 @@ Transform:
   m_GameObject: {fileID: 1689126808}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 63.836006, y: -0.40000188, z: 0}
+  m_LocalPosition: {x: 63.836006, y: -0.499, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -94290,8 +94625,80 @@ Transform:
   - {fileID: 506012738}
   - {fileID: 1863862576}
   - {fileID: 127787806}
+  - {fileID: 127814608}
   m_Father: {fileID: 1018985395}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1689126810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689126808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f614149d1dbd3748a1a2b00f79794ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _message: "\u0412\u0435\u0449\u0438 \u043D\u0433\u0435 \u0432\u043E\u0440\u043E\u0432\u0430\u0442\u044C!"
+  _linkBubble: {fileID: 127814608}
+--- !u!114 &1689126811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689126808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d4c9e8d7be8dd41ad7ec6617a5d5dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1689126812
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689126808}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.099861145, y: 0.6567722}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.8002777, y: 1.0998596}
+  m_EdgeRadius: 0
 --- !u!1 &1689415142
 GameObject:
   m_ObjectHideFlags: 0

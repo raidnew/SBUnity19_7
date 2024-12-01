@@ -12,19 +12,26 @@ public class Bullet : MonoBehaviour, IWeapon
     private Rigidbody2D _rb;
     private float _bornTime;
     private bool _removing = false;
+    private bool _isFlip = false;
 
     public float Damage => _damage;
+
+    public void Flip(bool flip)
+    {
+        _isFlip = flip;
+        transform.localScale = new Vector3((flip ? 1 : -1), 1, 1);
+    }
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
         _rb.gravityScale = 0;
-        _bornTime = Time.time;
     }
 
-    public void Start()
+    private void Start()
     {
-        _rb.velocity = _speed;
+        _rb.velocity = _isFlip ? _speed : new Vector3(-_speed.x, _speed.y, _speed.z);
+        _bornTime = Time.time;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

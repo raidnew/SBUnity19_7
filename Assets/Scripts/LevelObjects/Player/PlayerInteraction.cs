@@ -45,6 +45,18 @@ public class PlayerInteraction : MonoBehaviour, IInputListener, IPlayer
         }
     }
 
+    private bool _isFlip = false;
+
+    private bool IsFlip
+    {
+        get => _isFlip;
+        set
+        {
+            _isFlip = value;
+            transform.localScale = new Vector3((value ? 1 : -1), 1, 1);
+        }
+    }
+
     private bool IsOnGround
     {
         get => CurrentGround != null;
@@ -152,6 +164,7 @@ public class PlayerInteraction : MonoBehaviour, IInputListener, IPlayer
         _playerAnimator = GetComponent<Animator>();
         _health = GetComponent<Health>();
         _health.OnDied += Die;
+        IsFlip = true;
     }
 
     private void FixedUpdate()
@@ -189,9 +202,9 @@ public class PlayerInteraction : MonoBehaviour, IInputListener, IPlayer
         if (IsOnGround) relativeSpeed -= CurrentGround.Speed;
 
         if (relativeSpeed.x < -0.5)
-            Flip(false);
+            IsFlip = false;
         else if (relativeSpeed.x > 0.5)
-            Flip(true);
+            IsFlip = true;
 
         _playerAnimator.SetInteger("VSpeed", (int)(relativeSpeed.y * 10));
         _playerAnimator.SetInteger("HSpeed", (int)(relativeSpeed.x * 10));
@@ -200,7 +213,8 @@ public class PlayerInteraction : MonoBehaviour, IInputListener, IPlayer
     private void CreateBullet()
     {
         Bullet bullet = Instantiate<Bullet>(_bulletPrefab, _shootPoint.position, _shootPoint.rotation);
-        OnCreateBullet(bullet);
+        bullet.Flip(IsFlip);
+        OnCreateBullet?.Invoke(bullet);
     }
 
     private void OnDamage()
@@ -228,11 +242,6 @@ public class PlayerInteraction : MonoBehaviour, IInputListener, IPlayer
     private void OnFinishDie()
     {
         OnDied?.Invoke();
-    }
-
-    private void Flip(bool isFlip)
-    {
-        transform.localScale = new Vector3((isFlip ? 1 : -1), 1, 1);
     }
 
     private void SetHSpeed(float speed)

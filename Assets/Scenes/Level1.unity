@@ -81252,7 +81252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _camera: {fileID: 519420032}
-  _distance: 100
+  _distance: 2
 --- !u!1 &1432071777
 GameObject:
   m_ObjectHideFlags: 0

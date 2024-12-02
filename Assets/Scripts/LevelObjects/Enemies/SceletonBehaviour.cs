@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using static Cinemachine.CinemachineImpulseManager.ImpulseEvent;
 
 [RequireComponent(typeof(Enemy))]
 public class SceletonBehaviour : MonoBehaviour
@@ -8,7 +7,6 @@ public class SceletonBehaviour : MonoBehaviour
     [SerializeField] private EnemyObserver _sight;
 
     private IEnemy _enemy;
-    private bool _isViewingTarget;
     private Transform _transform;
     private Vector3? _targetPosition;
 

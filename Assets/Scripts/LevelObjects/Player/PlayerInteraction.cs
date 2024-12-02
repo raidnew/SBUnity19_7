@@ -2,6 +2,7 @@ using Cinemachine.Utility;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -34,14 +35,12 @@ public class PlayerInteraction : MonoBehaviour, IInputListener, IPlayer
     private Animator _playerAnimator;
     private Health _health;
 
-    private IGround _currentGround;
+    private List<IGround> _groundAreTouching = new List<IGround>();
 
-    private IGround CurrentGround{ 
-        get => _currentGround;
-        set
-        {
-            _currentGround = value;
-            _playerAnimator.SetBool("IsOnGround", CurrentGround != null);
+    private IGround CurrentGround{
+        get {
+            if (_groundAreTouching.Count == 0) return null;
+            return _groundAreTouching.Last();
         }
     }
 
@@ -172,18 +171,26 @@ public class PlayerInteraction : MonoBehaviour, IInputListener, IPlayer
         SetupAnimationSpeed();
     }
 
+    private void SetTouchGround(IGround ground, bool touch)
+    {
+        if (touch)
+            _groundAreTouching.Add(ground);
+        else if (_groundAreTouching.Contains(ground))
+            _groundAreTouching.Remove(ground);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         IGround ground;
         if (collision.gameObject.TryGetComponent<IGround>(out ground))
-            CurrentGround = ground;
+            SetTouchGround(ground, true);
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         IGround ground;
         if (collision.gameObject.TryGetComponent<IGround>(out ground))
-            CurrentGround = null;
+            SetTouchGround(ground, false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

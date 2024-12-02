@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 
 public class Bomb : MonoBehaviour, IAmUsable, IBomb
@@ -28,5 +25,18 @@ public class Bomb : MonoBehaviour, IAmUsable, IBomb
     public void OnEndExplode()
     {
         Destroy(gameObject);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        IWeapon weapon;
+        if (collision.gameObject.TryGetComponent<IWeapon>(out weapon))
+            Use();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        IWeapon weapon;
+        if (collision.gameObject.TryGetComponent<IWeapon>(out weapon))
+            Use();
     }
 }

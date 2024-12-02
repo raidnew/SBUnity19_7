@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public abstract class Enemy : BrokenObject, IEnemy
+public abstract class Enemy : MonoBehaviour, IEnemy
 {
     public virtual void Attack() => throw new System.NotImplementedException();
 

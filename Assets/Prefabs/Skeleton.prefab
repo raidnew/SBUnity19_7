@@ -284,6 +284,8 @@ GameObject:
   - component: {fileID: 6891742984832961813}
   - component: {fileID: 4897215300123237504}
   - component: {fileID: 5197746846987408271}
+  - component: {fileID: 3364265997852087139}
+  - component: {fileID: 1701844266943707100}
   m_Layer: 8
   m_Name: Health
   m_TagString: Untagged
@@ -374,7 +376,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -404,6 +406,32 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.38486505, y: 0.94286335}
   m_EdgeRadius: 0
+--- !u!114 &3364265997852087139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3724436010275619570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe91582fbe4581c4d9362007902a7095, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 0
+  _healthBar: {fileID: 2750189505796679664}
+--- !u!114 &1701844266943707100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3724436010275619570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0846fa7f4fc55834887d7893fed0b3ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7378325891156927242
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,6 +588,7 @@ MonoBehaviour:
   _baseSpeed: 0
   _leftLimitMove: {x: 0, y: 0, z: 0}
   _rightLimitMove: {x: 0, y: 0, z: 0}
+  _life: {fileID: 1701844266943707100}
 --- !u!114 &6634023271729844936
 MonoBehaviour:
   m_ObjectHideFlags: 0

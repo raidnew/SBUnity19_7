@@ -9,15 +9,18 @@ public class FarBackground : MonoBehaviour
 
     private Vector3 _startCameraPosition;
     private Vector3 _startPosition;
+    private float _moveMultiplier;
 
     private void Awake()
     {
         _startCameraPosition = _camera.position;
         _startPosition = transform.position;
+
+        _moveMultiplier = 1 / _distance;
     }
 
     private void Update()
     {
-        transform.position = _startPosition + (_camera.position - _startCameraPosition) / _distance;
+        transform.position = _startPosition + (_camera.position - _startCameraPosition) * _moveMultiplier;
     }
 }

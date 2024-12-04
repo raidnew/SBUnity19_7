@@ -21359,7 +21359,7 @@ MonoBehaviour:
   m_LookaheadTime: 1
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 1
-  m_XDamping: 1
+  m_XDamping: 3
   m_YDamping: 1
   m_ZDamping: 1
   m_TargetMovementOnly: 0
@@ -28627,7 +28627,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6027727, y: 0.27405, z: -10}
+  m_LocalPosition: {x: -3.6063783, y: 0.27405, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45748,8 +45748,8 @@ MonoBehaviour:
   _shootPoint: {fileID: 1561865688}
   _jumpPower: 10
   _airHorizontalSpeed: 4
-  _walkSpeed: 1
-  _runSpeed: 2
+  _walkSpeed: 1.5
+  _runSpeed: 3
   _pushPower: 1
   _textCantRun: "\u041F\u043E\u043F\u0440\u043E\u0431\u0443\u0439 \u0441\u0430\u043C
     \u043F\u043E\u0431\u0435\u0433\u0430\u0442\u044C \u0431\u0435\u0437 \u043E\u0431\u0443\u0432\u0438!"

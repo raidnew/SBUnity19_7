@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class WindowStartLevel : BaseWindow
 {
-    [SerializeField] private SceneAsset[] _levelScenes;
+    [SerializeField] private string[] _levelScenes;
     [SerializeField] private LevelButton _levelButtonPrefab;
 
     private List<Button> _levelButtons;
@@ -16,20 +16,22 @@ public class WindowStartLevel : BaseWindow
     {
         for (int i = 0; i < _levelScenes.Length; i++)
         {
-            LevelButton newlevelButon = Instantiate(_levelButtonPrefab, transform);
-            newlevelButon.transform.position = new Vector3(0, 40 * i, 0);
-            newlevelButon.onClick.AddListener(delegate { StartLevel(_levelScenes[i]); } );
+            LevelButton newlevelButon = Instantiate(_levelButtonPrefab, transform, true);
+            newlevelButon.SceneName = _levelScenes[i];
+            newlevelButon.GetComponent<RectTransform>().localPosition = new Vector3(0, 40 * i, 0);
+            newlevelButon.onClick.AddListener(delegate { StartLevel(newlevelButon.SceneName); });
         }
     }
 
-    private void StartLevel(SceneAsset scene)
+    private void StartLevel(string scene)
     {
-        SceneManager.LoadScene(scene.name);
+        SceneManager.LoadScene(scene);
+        Close();
     }
 
     private void OnDisable()
     {
-        
+
     }
 
 

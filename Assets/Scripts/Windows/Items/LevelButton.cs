@@ -6,6 +6,6 @@ using UnityEngine.UI;
 
 public class LevelButton : Button
 {
-    public SceneAsset SceneAsset { get; set; }
+    public string SceneName { get; set; }
     public string Text { get; set; }
 }

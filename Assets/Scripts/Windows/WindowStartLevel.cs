@@ -9,6 +9,7 @@ public class WindowStartLevel : BaseWindow
 {
     [SerializeField] private string[] _levelScenes;
     [SerializeField] private LevelButton _levelButtonPrefab;
+    [SerializeField] private Transform _buttonsContainer;
 
     private List<Button> _levelButtons;
 

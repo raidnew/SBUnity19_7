@@ -19,6 +19,7 @@ public class Health : MonoBehaviour
         {
             _currentHealth = value;
             if (_currentHealth < 0) _currentHealth = 0;
+            if (_currentHealth > _maxHealth) _currentHealth = _maxHealth;
             CheckAlive();
             SetHealthBar();
         }
@@ -32,6 +33,11 @@ public class Health : MonoBehaviour
     public void Damage(float damageValue)
     {
         CurrentHealth = CurrentHealth - damageValue;
+    }
+
+    public void Repair(float repairValue)
+    {
+        CurrentHealth = CurrentHealth + repairValue;
     }
 
     private void Awake()

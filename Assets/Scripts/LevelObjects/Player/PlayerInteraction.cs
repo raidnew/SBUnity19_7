@@ -201,6 +201,10 @@ public class PlayerInteraction : MonoBehaviour, IInputListener, IPlayer
         IDiedArea diedArea;
         if (collision.gameObject.TryGetComponent<IDiedArea>(out diedArea))
             _health.Damage(_health.CurrentHealth);
+        IHealer healer;
+        if (collision.gameObject.TryGetComponent<IHealer>(out healer))
+            _health.Repair(_health.CurrentHealth);
+
     }
 
     private void SetupAnimationSpeed()
@@ -213,8 +217,13 @@ public class PlayerInteraction : MonoBehaviour, IInputListener, IPlayer
         else if (relativeSpeed.x > 0.5)
             IsFlip = true;
 
-        _playerAnimator.SetInteger("VSpeed", (int)(relativeSpeed.y * 10));
+        SetVerticalSpeed((int)(relativeSpeed.y * 10));
         _playerAnimator.SetInteger("HSpeed", (int)(relativeSpeed.x * 10));
+    }
+
+    private void SetVerticalSpeed(int verticalSpeed)
+    {
+        _playerAnimator.SetInteger("VSpeed", verticalSpeed);
     }
 
     private void CreateBullet()

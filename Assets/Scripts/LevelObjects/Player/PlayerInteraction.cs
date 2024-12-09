@@ -182,14 +182,20 @@ public class PlayerInteraction : MonoBehaviour, IInputListener, IPlayer
     private void OnCollisionEnter2D(Collision2D collision)
     {
         IGround ground;
-        if (collision.gameObject.TryGetComponent<IGround>(out ground))
+        IPlayer player;
+        bool isPlayer = collision.otherCollider.gameObject.TryGetComponent<IPlayer>(out player);
+        bool isGround = collision.gameObject.TryGetComponent<IGround>(out ground);
+        if (isGround && isPlayer)
             SetTouchGround(ground, true);
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         IGround ground;
-        if (collision.gameObject.TryGetComponent<IGround>(out ground))
+        IPlayer player;
+        bool isPlayer = collision.otherCollider.gameObject.TryGetComponent<IPlayer>(out player);
+        bool isGround = collision.gameObject.TryGetComponent<IGround>(out ground);
+        if (isGround && isPlayer)
             SetTouchGround(ground, false);
     }
 

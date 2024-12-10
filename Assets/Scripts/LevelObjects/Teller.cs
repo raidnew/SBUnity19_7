@@ -7,7 +7,6 @@ public class Teller : MonoBehaviour, IAmUsable
     [SerializeField] private string _message;
     [SerializeField] private Transform _linkBubble;
     [SerializeField] private List<string> _messages;
-    private int currentIndex = 0;
 
     public bool CanUse { get => true; }
 

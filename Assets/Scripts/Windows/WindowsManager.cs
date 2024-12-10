@@ -6,26 +6,16 @@ public class WindowsManager : BaseWindow
     [SerializeField] private WindowWin _windowWin;
     [SerializeField] private WindowDie _windowDied;
     [SerializeField] private WindowStartLevel _windowStartLevel;
+    [SerializeField] private UserInterface _userInterface;
 
     private IWindow _currentOpenedWindow;
 
-    private void Start()
-    {
-        InitActions();
-        ShowWindowMain();
-    }
-
-    private void InitActions()
-    {
-        _windowMain.OnPlay += ShowWindowStartLevel;
-    }
-
-    private void ShowWindowMain()
+    public void ShowWindowMain()
     {
         ShowWindow(_windowMain);
     }
 
-    private void ShowWindowStartLevel()
+    public void ShowWindowStartLevel()
     {
         ShowWindow(_windowStartLevel);
     }
@@ -36,6 +26,16 @@ public class WindowsManager : BaseWindow
         _currentOpenedWindow = window;
         _currentOpenedWindow.Open();
 
+    }
+
+    public void ShowUserInterface()
+    {
+        _userInterface.gameObject.SetActive(true);
+    }
+
+    public void HideUserInterface()
+    {
+        _userInterface.gameObject.SetActive(false);
     }
 
     private void CloseCurrentWindow()

@@ -1,10 +1,16 @@
+using System;
 using UnityEngine;
 
 public class Level : MonoBehaviour
 {
+    public static Action OnWin;
+    public static Action OnLose;
+    public static Action OnStart;
+
     [SerializeField] private PlayerInteraction _player;
     [SerializeField] private LevelFinish _levelFinish;
     [SerializeField] private Transform _container;
+
 
     private void Awake()
     {
@@ -13,9 +19,14 @@ public class Level : MonoBehaviour
         _levelFinish.OnFinishComplete += OnLevelComplete;
     }
 
+    private void Start()
+    {
+        OnStart?.Invoke();
+    }
+
     private void OnLevelComplete()
     {
-        Notice.FastNotice("Level complete!");
+        OnWin?.Invoke();
     }
 
     private void OnCreateObject(Bullet bullet)
@@ -25,6 +36,6 @@ public class Level : MonoBehaviour
 
     private void OnPlayerDied()
     {
-        Notice.FastNotice("You died!");
+        OnLose?.Invoke();
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class WindowMain : BaseWindow, IWindow
 {
-    public Action OnPlay;
+    public static Action OnPlay;
 
     [SerializeField] private Button _playButton;
 

@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: wp13159376-pixel-cave-wallpapers
+  m_Name: 4
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 84b2a0060d31dea4ab6cc0ff6523a1e8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00f7959d5b065f34f86fbdf62bb4a9e8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

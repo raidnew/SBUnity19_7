@@ -67,7 +67,7 @@ public class Sceleton : Enemy
 
     private void Die()
     {
-        _animator.SetBool("IsALive", false);
+        _animator.SetBool("IsAlive", false);
     }
 
     private void SetHSpeed(float speed)

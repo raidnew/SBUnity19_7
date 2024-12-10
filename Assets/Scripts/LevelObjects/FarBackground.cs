@@ -16,7 +16,7 @@ public class FarBackground : MonoBehaviour
         _startCameraPosition = _camera.position;
         _startPosition = transform.position;
 
-        _moveMultiplier = 1 / _distance;
+        _moveMultiplier = 1 - 1 / _distance;
     }
 
     private void Update()

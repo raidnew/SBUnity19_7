@@ -6,7 +6,7 @@ public class Level : MonoBehaviour
     [SerializeField] private LevelFinish _levelFinish;
     [SerializeField] private Transform _container;
 
-    private void Awake()
+    private void Awake(int playerHealth, UsersItems[] playerItems)
     {
         _player.OnDied += OnPlayerDied;
         _player.OnCreateBullet += OnCreateObject;

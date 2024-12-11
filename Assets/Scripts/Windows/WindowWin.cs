@@ -1,18 +1,23 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WindowWin : BaseWindow
 {
-    // Start is called before the first frame update
-    void Start()
+    public static Action OnNextLevel;
+
+    [SerializeField] private Button _nextButton;
+
+    private void Awake()
     {
-        
+        _nextButton.onClick.AddListener(ClickNextLevel);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void ClickNextLevel()
     {
-        
+        OnNextLevel?.Invoke();
+        Close();
     }
 }

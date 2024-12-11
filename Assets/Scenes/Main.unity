@@ -306,6 +306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38f9306b14d3896429de24ea33040272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _nextButton: {fileID: 390443400}
 --- !u!1 &62740867
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,6 +1251,7 @@ GameObject:
   - component: {fileID: 1136025095}
   - component: {fileID: 1136025094}
   - component: {fileID: 1136025093}
+  - component: {fileID: 1136025096}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -1297,6 +1299,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1136025096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136025092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1090aa33374530247866efd2356fd237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelScenes:
+  - Level1
+  - Level2
 --- !u!1 &1198796170
 GameObject:
   m_ObjectHideFlags: 0
@@ -2034,11 +2051,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a67ff0f3ef4d0cb46b5074382b6aa1c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _levelScenes:
-  - Level1
-  - Level2
   _levelButtonPrefab: {fileID: 4370030587842462443, guid: fddcf39c7cf1aca44a0266f09f1f829b, type: 3}
-  _buttonsContainer: {fileID: 0}
+  _buttonsContainer: {fileID: 1962239720}
+  _levelList: {fileID: 1136025096}
 --- !u!1 &1603270594
 GameObject:
   m_ObjectHideFlags: 0

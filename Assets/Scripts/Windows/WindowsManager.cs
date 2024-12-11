@@ -15,6 +15,16 @@ public class WindowsManager : BaseWindow
         ShowWindow(_windowMain);
     }
 
+    public void ShowWindowDie()
+    {
+        ShowWindow(_windowDied);
+    }
+
+    public void ShowWindowWin()
+    {
+        ShowWindow(_windowWin);
+    }
+
     public void ShowWindowStartLevel()
     {
         ShowWindow(_windowStartLevel);

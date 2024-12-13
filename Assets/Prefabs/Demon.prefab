@@ -155,9 +155,6 @@ MonoBehaviour:
   _sword: {fileID: 6754177180781515715}
   _timeBeetweenAttack: 2
   _baseSpeed: 2
-  _leftLimitMove: {x: 0, y: 0, z: 0}
-  _rightLimitMove: {x: 0, y: 0, z: 0}
-  _life: {fileID: 7671062038564262612}
 --- !u!114 &1406752597250720100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,6 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _attackDistance: 1.5
   _sight: {fileID: 7335232339654447996}
+  _life: {fileID: 7671062038564262612}
 --- !u!61 &4994764742629991788
 BoxCollider2D:
   m_ObjectHideFlags: 0

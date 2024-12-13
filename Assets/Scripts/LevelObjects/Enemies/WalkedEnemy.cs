@@ -9,9 +9,6 @@ public class Sceleton : Enemy
     [SerializeField] private EnemySword _sword;
     [SerializeField] private float _timeBeetweenAttack;
     [SerializeField] private int _baseSpeed;
-    [SerializeField] private Vector3 _leftLimitMove;
-    [SerializeField] private Vector3 _rightLimitMove;
-    [SerializeField] private BrokenObject _life;
 
     private Animator _animator;
     private Rigidbody2D _rb;
@@ -32,22 +29,16 @@ public class Sceleton : Enemy
     {
         _rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
-        _life.OnDied += Die;
     }
 
     public override bool CanAttack()
     {
-        return !IsAttack && _life.Percent > 0 && Time.time > _lastAttackTime + _timeBeetweenAttack && !IsDied();
+        return !IsAttack && Time.time > _lastAttackTime + _timeBeetweenAttack;
     }
 
     public override bool CanMove()
     {
-        return !IsDied();
-    }
-
-    public override bool IsDied()
-    {
-        return _life.Percent == 0;
+        return true;
     }
 
     public override void Move(float direction)
@@ -65,7 +56,7 @@ public class Sceleton : Enemy
         IsAttack = true;
     }
 
-    private void Die()
+    public override void Die()
     {
         _animator.SetBool("IsAlive", false);
     }

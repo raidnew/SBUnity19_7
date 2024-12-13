@@ -8,11 +8,11 @@ public abstract class Enemy : MonoBehaviour, IEnemy
 
     public virtual bool CanMove() => throw new System.NotImplementedException();
 
-    public virtual bool IsDied() => throw new System.NotImplementedException();
-
     public virtual void Move(float direction) => throw new System.NotImplementedException();
 
     public virtual void Wait() => throw new System.NotImplementedException();
+
+    public virtual void Die() => throw new System.NotImplementedException();
 
     protected void Flip(bool isFlip)
     {

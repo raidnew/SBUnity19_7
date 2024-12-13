@@ -5,6 +5,7 @@ public class SceletonBehaviour : MonoBehaviour
 {
     [SerializeField] private float _attackDistance;
     [SerializeField] private EnemyObserver _sight;
+    [SerializeField] private BrokenObject _life;
 
     private IEnemy _enemy;
     private Transform _transform;
@@ -13,7 +14,8 @@ public class SceletonBehaviour : MonoBehaviour
     private void Awake()
     {
         _enemy = GetComponent<Enemy>();
-        _transform = GetComponent<Transform>(); 
+        _transform = GetComponent<Transform>();
+        _life.OnDied += OnDied;
         InitSight();
     }
 
@@ -46,11 +48,21 @@ public class SceletonBehaviour : MonoBehaviour
             AttackTarget();
         else
             _enemy.Wait();
+    }
 
+    private void OnDied()
+    {
+        _enemy.Die();
+    }
+
+    private bool IsDied()
+    {
+        return _life.Percent <= 0;
     }
 
     private void AttackTarget()
     {
+        if (IsDied()) return;
         if (GetDistanceToTarget() > _attackDistance && _enemy.CanMove())
         {
             float directionMove = GetVectorToTarget().x > 0 ? 1 : -1;

@@ -6,6 +6,7 @@ public class FarBackground : MonoBehaviour
 {
     [SerializeField] private Transform _camera;
     [SerializeField] private float _distance;
+    [SerializeField] private bool _lockY;
 
     private Vector3 _startCameraPosition;
     private Vector3 _startPosition;
@@ -21,6 +22,8 @@ public class FarBackground : MonoBehaviour
 
     private void Update()
     {
-        transform.position = _startPosition + (_camera.position - _startCameraPosition) * _moveMultiplier;
+        Vector3 moveDelta = _camera.position - _startCameraPosition;
+        if (_lockY) moveDelta.y = 0;
+        transform.position = _startPosition + moveDelta * _moveMultiplier;
     }
 }

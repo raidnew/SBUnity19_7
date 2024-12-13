@@ -598,11 +598,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sword: {fileID: 8672867965183540105}
-  _timeBeetweenAttack: 0
+  _timeBeetweenAttack: 1
   _baseSpeed: 1
-  _leftLimitMove: {x: 0, y: 0, z: 0}
-  _rightLimitMove: {x: 0, y: 0, z: 0}
-  _life: {fileID: 1701844266943707100}
 --- !u!114 &8677793107192537068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,6 +614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _attackDistance: 1
   _sight: {fileID: 421105808681618152}
+  _life: {fileID: 1701844266943707100}
 --- !u!61 &7320485780207873582
 BoxCollider2D:
   m_ObjectHideFlags: 0

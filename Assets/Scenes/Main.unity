@@ -1314,6 +1314,8 @@ MonoBehaviour:
   _levelScenes:
   - Level1
   - Level2
+  - Level3
+  - Level4
 --- !u!1 &1198796170
 GameObject:
   m_ObjectHideFlags: 0

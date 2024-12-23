@@ -17,7 +17,7 @@ public class Bubble : MonoBehaviour
 
     public static void Message(string message, Transform teller)
     {
-        __instance.ShowBubble(message, teller);
+        __instance?.ShowBubble(message, teller);
     }
 
     private void ShowBubble(string message, Transform teller)

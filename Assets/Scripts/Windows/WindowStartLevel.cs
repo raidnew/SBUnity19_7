@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -24,10 +25,12 @@ public class WindowStartLevel : BaseWindow
 
         foreach(string level in _levelList.LevelScenes())
         {
-            LevelButton newlevelButon = Instantiate(_levelButtonPrefab, transform, true);
+            LevelButton newlevelButon = Instantiate(_levelButtonPrefab, _buttonsContainer, true);
             newlevelButon.SceneName = level;
             newlevelButon.SceneIndex = i;
-            newlevelButon.GetComponent<RectTransform>().localPosition = new Vector3(0, 40 * i++, 0);
+            TextMeshProUGUI text = newlevelButon.GetComponentInChildren<TextMeshProUGUI>();
+            text.text = level;
+            newlevelButon.GetComponent<RectTransform>().localPosition = new Vector3(0, -40 * i++, 0);
             newlevelButon.onClick.AddListener(delegate { StartLevel(newlevelButon.SceneIndex); });
             _levelButtons.Add(newlevelButon);
         }

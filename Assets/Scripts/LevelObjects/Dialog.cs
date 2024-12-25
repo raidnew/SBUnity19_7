@@ -13,6 +13,7 @@ struct Phrase
 
 public class Dialog : MonoBehaviour, IAmUsable
 {
+    public Action OnDialogFinish;
     [SerializeField] private Phrase[] _phrases;
 
     public bool CanUse => true;
@@ -29,6 +30,7 @@ public class Dialog : MonoBehaviour, IAmUsable
             Bubble.Message(_phrases[i].phrase, _phrases[i].linkBubble);
             yield return new WaitForSeconds(3);
         }
+        OnDialogFinish?.Invoke();
         yield return true;
     }
 }

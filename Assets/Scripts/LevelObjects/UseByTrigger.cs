@@ -7,17 +7,18 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class UseByTrigger : MonoBehaviour
 {
-    private IAmUsable _iAmIsUsed;
+    private IAmUsable[] _iAmIsUsed;
     private void Awake()
     {
-        _iAmIsUsed = GetComponent<IAmUsable>();
+        _iAmIsUsed = GetComponents<IAmUsable>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         ICanUse user;
         if (collision.gameObject.TryGetComponent<ICanUse>(out user))
-            if(_iAmIsUsed.CanUse) _iAmIsUsed.Use();
+            foreach(IAmUsable usable in _iAmIsUsed)
+                if(usable.CanUse) usable.Use();
     }
 
 }

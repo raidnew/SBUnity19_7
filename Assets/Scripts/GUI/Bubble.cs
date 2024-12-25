@@ -15,22 +15,26 @@ public class Bubble : MonoBehaviour
         _showedBubbls = new List<ITalkBubble>();
     }
 
-    public static void Message(string message, Transform teller)
+    public static ITalkBubble Message(string message, Transform teller)
     {
-        __instance?.ShowBubble(message, teller);
+        return __instance?.ShowBubble(message, teller);
     }
 
-    private void ShowBubble(string message, Transform teller)
+    private ITalkBubble ShowBubble(string message, Transform teller)
     {
         int controlsumm = GetControlSumm(message, teller.GetInstanceID());
         if (!CheckAlreadyBubble(controlsumm))
         {
+            if(_camera == null) _camera = Camera.main;
+
             ITalkBubble newBubble = Instantiate(_bubblePrefab, transform);
             newBubble.CheckSumm = controlsumm;
             newBubble.ShowMessage(message, teller, _camera, 3);
             newBubble.OnRemoveBubble += OnDestroyBubble;
             _showedBubbls.Add(newBubble);
+            return newBubble;
         }
+        return null;
     }
 
     private int GetControlSumm(string text, int tellerId)

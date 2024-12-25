@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,12 +7,25 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(LevelList))]
 public class Game : MonoBehaviour
 {
+    public static Action<int> OnCountCoinsChanged;
+
     private static bool firstLoad = true;
 
     [SerializeField] private WindowsManager _windowsManager;
 
     private LevelList _levelList;
     private int _currentLevelIndex;
+    private int _countCoins;
+
+    public int CointCoins
+    {
+        get => _countCoins;
+        set
+        {
+            _countCoins = value;
+            OnCountCoinsChanged?.Invoke(_countCoins);
+        }
+    }
 
     private void Awake()
     {
@@ -37,6 +51,9 @@ public class Game : MonoBehaviour
         Level.OnLose += LevelHasLoosed;
         Level.OnWin += LevelHasWon;
         Level.OnStart += LevelHasStarted;
+        Coin.OnCollect += OnCoinCollect;
+
+        CointCoins = 0;
     }
 
     private void LevelHasLoosed()
@@ -77,6 +94,11 @@ public class Game : MonoBehaviour
     {
         _currentLevelIndex++;
         StartCurrentLevel();
+    }
+
+    private void OnCoinCollect()
+    {
+        CointCoins++;
     }
 
 }
